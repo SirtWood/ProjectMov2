@@ -65,7 +65,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etUserName"
+                android:id="@+id/etUserEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="User"
@@ -80,7 +80,7 @@
             android:layout_marginRight="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etUserPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"

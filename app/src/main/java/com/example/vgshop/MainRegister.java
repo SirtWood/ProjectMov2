@@ -6,29 +6,51 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.content.Intent;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import com.example.vgshop.databinding.ActivityMainBinding;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainRegister extends AppCompatActivity {
 
-    EditText jetUserName, jetEmail, jetCountry, jetCity, jetPassword, jetRole, jetShopName;
-    Button jbtnRegisterGO;
+    private EditText jetUserName, jetEmail, jetCountry, jetCity, jetPassword, jetRole, jetShopName;
+    private Button jbtnRegisterGO;
+    private ActivityMainBinding activityMainBinding;
+    private FirebaseAuth mAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     ImageView jivSettings;
     String userName, email, country, city, password, role, shopName, userNameValues, passValues, emailValues, countryValues, cityValues, roleValues, shopNameValues;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register_main);
+        activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = activityMainBinding.getRoot();
+        setContentView(view);
+        mAuth = FirebaseAuth.getInstance();
 
-        jetUserName = findViewById(R.id.etUserName);
+     /*   jetUserName = findViewById(R.id.etUserName);
         jetEmail = findViewById(R.id.etEmail);
         jetCountry = findViewById(R.id.etCountry);
         jetCity = findViewById(R.id.etCity);
         jetPassword = findViewById(R.id.etPassword2);
         jetRole = findViewById(R.id.etRole);
         jetShopName = findViewById(R.id.etShopName);
-        jbtnRegisterGO = findViewById(R.id.btnRegisterGO);
+        jbtnRegisterGO = findViewById(R.id.btnRegisterGO); */
     }
 
     public void jbtnRegisterGO(View view) {
@@ -76,6 +98,8 @@ public class MainRegister extends AppCompatActivity {
         } else if (role.equals("seller") || role.equals("Seller") || role.equals("SELLER")) {
             Toast.makeText(this, "Welcome, seller of: " + shopName, Toast.LENGTH_LONG).show();
         }
+
+
     }
 }
 

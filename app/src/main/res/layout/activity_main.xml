@@ -50,14 +50,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/logo_playzone_completo" />
+            app:srcCompat="@drawable/logo_playzone_completo"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/ivSettings"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="4"
-            app:srcCompat="@android:drawable/ic_menu_manage" />
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/ic_icono_config" />
     </LinearLayout>
 
     <LinearLayout

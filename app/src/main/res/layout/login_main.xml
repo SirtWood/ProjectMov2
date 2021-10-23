@@ -63,11 +63,11 @@
             android:layout_marginRight="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etUserName"
+                android:id="@+id/etUserEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittext"
-                android:hint="User" />
+                android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -78,7 +78,7 @@
             android:layout_marginRight="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etUserPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittext"
@@ -93,8 +93,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/custom_button"
-            android:onClick="jbtnLoginGO"
-            android:text="GO!" />
+            android:onClick="Login"
+            android:text="Login" />
 
     </LinearLayout>
 

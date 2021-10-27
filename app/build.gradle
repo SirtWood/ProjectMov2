@@ -28,9 +28,6 @@ android {
     viewBinding {
         enabled = true
     }
-    buildFeatures {
-        viewBinding true
-    }
 }
 apply plugin: 'com.google.gms.google-services'
 dependencies {

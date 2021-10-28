@@ -3,6 +3,12 @@
         <item>User</item>
         <item>Seller</item>
     </string-array>
-    <string name="btn_edit">Editar</string>
-    <string name="btn_delete">Eliminar</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_update">Update</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_stock">Product Stock</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_category">Product Category</string>
 </resources>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VGShop">
         <activity
+            android:name=".EditProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
